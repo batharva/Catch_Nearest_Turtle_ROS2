@@ -1,0 +1,14 @@
+<launch>
+  <!-- Launch turtlesim -->
+  <node pkg="turtlesim" exec="turtlesim_node" />
+
+  <!-- Launch turtle controller -->
+  <node pkg="turtlesim_node" exec="controller">
+    <param from="$(find-pkg-share my_turtle_bringup)/config/catch_them_all_config.yaml"/>
+  </node>
+
+  <!-- Launch turtle spawner -->
+  <node pkg="turtlesim_node" exec="spawner">
+    <param from="$(find-pkg-share my_turtle_bringup)/config/catch_them_all_config.yaml"/>
+  </node>
+</launch>
