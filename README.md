@@ -1,9 +1,3 @@
-# Catch_Nearest_Turtle_ROS2
-
-
-markdown
-Copy
-Edit
 # 🐢 Catch_Nearest_Turtle_ROS2
 
 This ROS 2 package simulates a turtle in the `turtlesim` environment that automatically catches the **nearest turtle**. It uses ROS 2 nodes to detect the closest turtle and move toward it until it's caught.
